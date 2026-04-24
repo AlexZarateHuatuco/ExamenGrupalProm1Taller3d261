@@ -22,7 +22,7 @@ namespace ExamenGrupalT3d26._1
                 string dmg = Console.ReadLine();
                 Character j = new Character(name, hp, dmg);
 
-                List<Enemis> e = new List<Enemis>(); //llenan la lista
+                List<Enemies> e = new List<Enemies>(); //llenan la lista
 
                 while(j.hp > 0)
                 {
@@ -42,10 +42,10 @@ namespace ExamenGrupalT3d26._1
             }
         }
 
-        public void Juego(Character j,List<Enemis> enemies)
+        public void Juego(Character j,List<Enemies> enemies)
         {
             int victoryCount = 0;
-            //se van contando los enemigos derrotados
+            //se van contando los enemigos derrotados, victoryCount++;
             if(victoryCount == enemies.Count)
             {
                 Console.WriteLine("FINAL BUENO: Sobreviviste y derrotaste a todos los enemigos");
