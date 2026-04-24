@@ -14,13 +14,8 @@ namespace ExamenGrupalT3d26._1
             bool c = true;
             while (c)
             {
-                Console.WriteLine("Ingresa tu nombre:");
-                string name = Console.ReadLine();
-                Console.WriteLine("Ingresa la cantidad de HP:");
-                string hp = Console.ReadLine();
-                Console.WriteLine("Ingresa el daño:");
-                string dmg = Console.ReadLine();
-                Character j = new Character(name, hp, dmg);
+                Character j = new Character("", 0, 0);
+                j.CharacterCreation();
 
                 List<Enemies> e = new List<Enemies>(); //llenan la lista
 
