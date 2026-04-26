@@ -14,7 +14,6 @@ namespace ExamenGrupalT3d26._1
         private int enemyDamage;
         private int stamina;
         private int cost;
-        private int archerdefaultval= 3;
         private bool isArcher = false;
         private bool isNecromancer = false;
 
@@ -53,6 +52,7 @@ namespace ExamenGrupalT3d26._1
             this.enemyDamage = 6;
             this.stamina = -2;
             this.cost = 3;
+            this.isNecromancer = true;
         }
 
 
@@ -62,24 +62,24 @@ namespace ExamenGrupalT3d26._1
             this.enemyDamage = 0;
             this.stamina = -2;
             this.cost = 4;
-            this.isNecromancer = true;
         }
 
         public void TakeTurn(Action<int> dealDamage, Action<Enemies> spawnCorpse)
         {
-            // 1. Si tiene suficiente stamina, actúa
+
             if (stamina > 0)
             {
                 if (isNecromancer)
                 {
-                    // Necromante invoca un cadáver (no hace daño directo)
-                    Enemies corpse = new Enemies();
-                    corpse.EnemyCorpse();
-                    spawnCorpse(corpse);
+                    //Enemies corpse = new Enemies();
+                    //corpse.EnemyCorpse();
+                    //spawnCorpse(corpse);
                 }
                 else
                 {
-                    // El resto inflige daño
+                    // El resto inflige daño! Pew pew
+                    //obvii el pug nunca se le acaba
+
                     dealDamage(enemyDamage);
                 }
                 stamina -= cost;   
