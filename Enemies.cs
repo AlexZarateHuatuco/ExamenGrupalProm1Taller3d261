@@ -60,8 +60,8 @@ namespace ExamenGrupalT3d26._1
         {
             this.enemyHP = 10;
             this.enemyDamage = 0;
-            this.stamina = -2;
-            this.cost = 4;
+            this.stamina = -1;
+            this.cost = 3;
         }
 
         public void TakeTurn(Action<int> dealDamage, Action<Enemies> spawnCorpse)
