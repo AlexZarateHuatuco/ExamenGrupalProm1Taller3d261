@@ -1,0 +1,52 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ExamenGrupalT3d26._1
+{
+    internal class Situation8 : Situation
+    {
+        public Situation8() : base("Cursed Library", "Un grimorio encadenado susurra tu nombre")
+        {
+
+        }
+
+        public override void Play(Character player)
+        {
+            Console.WriteLine("\n--- " + title + " ---");
+
+            Console.WriteLine("mientras late como un órgano vivo.");
+
+            Console.WriteLine("1. Leer Grimorio");
+
+            Console.WriteLine("2. Sellarlo con fuego");
+
+            string option =
+             Console.ReadLine();
+
+            if (option == "1")
+            {
+                player.IncreaseDamage(4);
+
+                player.TakeDamage(5);
+
+                Console.WriteLine("Obtienes poder prohibido.");
+            }
+
+            else
+            {
+                if (player.items.Contains(1))
+                {
+                    Console.WriteLine("La Llave Antigua revela una ruta secreta.");
+                }
+
+                else
+                {
+                    Console.WriteLine("El libro arde lentamente.");
+                }
+            }
+        }
+    }
+}

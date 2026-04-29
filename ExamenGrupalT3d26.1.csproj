@@ -46,6 +46,17 @@
     <Compile Include="Character.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Situation.cs" />
+    <Compile Include="Situation1.cs" />
+    <Compile Include="Situation10.cs" />
+    <Compile Include="Situation2.cs" />
+    <Compile Include="Situation3.cs" />
+    <Compile Include="Situation4.cs" />
+    <Compile Include="Situation5.cs" />
+    <Compile Include="Situation6.cs" />
+    <Compile Include="Situation7.cs" />
+    <Compile Include="Situation8.cs" />
+    <Compile Include="Situation9.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
