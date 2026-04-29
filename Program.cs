@@ -37,7 +37,7 @@ namespace ExamenGrupalT3d26._1
             }
         }
 
-        public void Juego(Character j,List<Enemies> enemies)
+        public static void Juego(Character j,List<Enemies> enemies)
         {
             int victoryCount = 0;
             //se van contando los enemigos derrotados, victoryCount++;
