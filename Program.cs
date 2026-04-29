@@ -18,16 +18,9 @@ namespace ExamenGrupalT3d26._1
                 j.CharacterCreation();
 
                 List<Enemies> e = new List<Enemies>(); //llenan la lista
-
-                while(j.hp > 0)
-                {
-                    Juego(j,e);
-                    if (j.hp <= 0)
-                    {
-                        Console.WriteLine("FINAL MALO: HP agotado");
-                    }
-                }
-                
+               
+                Juego(j,e);
+                                
                 Console.WriteLine("¿Volver a intentar?\n1 - Sí\n2 - No");
                 string cont = Console.ReadLine();
                 if(cont == "2")
@@ -39,6 +32,36 @@ namespace ExamenGrupalT3d26._1
 
         public static void Juego(Character j,List<Enemies> enemies)
         {
+
+            List<Situation> situations = new List<Situation>()
+            {
+                new Situation1(),
+                new Situation2(),
+                new Situation3(),
+                new Situation4(),
+                new Situation5(),
+                new Situation6(),
+                new Situation7(),
+                new Situation8(),
+                new Situation9(),
+                new Situation10()
+             };
+
+            foreach (Situation s in situations)
+            {
+                s.Play(j);
+
+                Console.WriteLine("\n--- Presiona ENTER para continuar ---");
+                Console.ReadLine();
+
+                // Si muere, salir del juego
+                if (j.Life <= 0)
+                {
+                    Console.WriteLine("FINAL MALO: HP agotado");
+                    return;
+                }
+            }
+
             int victoryCount = 0;
             //se van contando los enemigos derrotados, victoryCount++;
             if(victoryCount == enemies.Count)
