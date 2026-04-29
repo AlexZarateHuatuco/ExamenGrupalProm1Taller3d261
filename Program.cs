@@ -10,6 +10,8 @@ namespace ExamenGrupalT3d26._1
     {
         static void Main(string[] args)
         {
+            Character c = new Character("", 0, 0);
+            c.CharacterCreation();
         }
     }
 }
