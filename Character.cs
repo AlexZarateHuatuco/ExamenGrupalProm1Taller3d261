@@ -13,9 +13,21 @@ namespace ExamenGrupalT3d26._1
         int life;
         int damage;
         string name;
-        public string Name => name;
-        public int Life => life;
-        public int Damage => damage;
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+        public int Life
+        {
+            get { return life; }
+            set { life = value; }
+        }
+        public int Damage
+        {
+            get { return damage; }
+            set { damage = value; }
+        }
         public List<int> items = new List<int>();
         public void CharacterCreation()
         {
