@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
 
 namespace ExamenGrupalT3d26._1
 {
@@ -19,10 +15,10 @@ namespace ExamenGrupalT3d26._1
 
                 List<Enemies> e = new List<Enemies>(); //llenan la lista
 
-                while(j.hp > 0)
+                while(j.Life > 0)
                 {
                     Juego(j,e);
-                    if (j.hp <= 0)
+                    if (j.Life <= 0)
                     {
                         Console.WriteLine("FINAL MALO: HP agotado");
                     }
