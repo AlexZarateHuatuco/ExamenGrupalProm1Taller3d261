@@ -98,7 +98,7 @@ namespace ExamenGrupalT3d26._1
 
             //int victoryCount = 0;
             //se van contando los enemigos derrotados, victoryCount++;
-            if (j.items.Contains(3))
+            /*if (j.items.Contains(3))
             {
                 Console.WriteLine("FINAL BUENO: Sobreviviste y derrotaste a todos los enemigos");
                 Environment.Exit(0);
@@ -107,7 +107,7 @@ namespace ExamenGrupalT3d26._1
             {
                 Console.WriteLine("FINAL NEUTRO: Lograste escapar de la mazmorra");
                 Environment.Exit(0);
-            }
+            }*/
         }
     }
 }

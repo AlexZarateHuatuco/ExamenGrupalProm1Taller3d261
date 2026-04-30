@@ -53,6 +53,7 @@ namespace ExamenGrupalT3d26._1
                     Console.WriteLine("La corona se resquebraja.");
 
                     Console.WriteLine("FINAL BUENO: al resquebrajar la corona logras elimnar por completo el mal que habitaba en la mazmorra");
+                    Environment.Exit(0);
                 }
                 else
                 {
@@ -64,10 +65,12 @@ namespace ExamenGrupalT3d26._1
                     if (player.Life <5)
                     {
                         Console.WriteLine("FINAL NEUTRAL: luego de destruir la corona caminas hacia el final de la mazmorra pero por tantas heridas que tienes caes ");
+                        Environment.Exit(0);
                     }
                     else
                     {
                         Console.WriteLine("FINAL NEUTRAL: luego de destruir la corona caminas hacia el final de la mazmorra");
+                        Environment.Exit(0);
                     }
 
                 }
@@ -82,10 +85,12 @@ namespace ExamenGrupalT3d26._1
                 if (player.Life > 0)
                 {
                     Console.WriteLine("FINAL Malo: el poder logro consumirte y ahora te vuelves el nuevo jefe de la mazmorra");
+                    Environment.Exit(0);
                 }
                 else
                 {
                     Console.WriteLine("FINAL Malo: no soportas el poder y mueres");
+                    Environment.Exit(0);
                 }
 
 
