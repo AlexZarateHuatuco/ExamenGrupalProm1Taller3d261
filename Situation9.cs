@@ -27,12 +27,24 @@ namespace ExamenGrupal
             string option =
              Console.ReadLine();
 
+            if (player.LifePotion == true)
+            {
+                Console.WriteLine("quieres usar la pocion de vida?");
+                string optionP = Console.ReadLine();
+                if (optionP == "1")
+                {
+                    player.Life += 5;
+                    Console.Write($"usas pocion de vida (vida actual {player.Life}).");
+                    player.LifePotion = false;
+                }
+            }
+
             if (option == "1")
             {
-                Console.WriteLine("¡Un necromancer se mete en tu camino!!");
                 Enemies enemy = EnemiesData.Enemies[2];
                 combat(player, enemy);
-                Console.WriteLine("¡Logras matar al necromancer!!");
+                Console.WriteLine("¡Logras matar al caballero!!,deja caer una pocion de vida");
+                player.LifePotion = true;
                 /*if (player.items.Contains(2))
                 {
                     //player.TakeDamage(4);
@@ -64,6 +76,20 @@ namespace ExamenGrupal
 
         public void combat(Character player, Enemies enemy)
         {
+            if (player.damagePotion == true)
+            {
+                Console.WriteLine("quieres usar la pocion de daño?");
+                Console.WriteLine("1.si");
+                Console.WriteLine("2.no");
+
+                string optionP = Console.ReadLine();
+                if (optionP == "1")
+                {
+                    Console.Write($"usas pocion de daño (vida actual del enemigo{enemy.enemyHP}).");
+                    player.damagePotion = false;
+                }
+            }
+
             while (player.Life > 0 && enemy.enemyHP > 0)
             {
                 enemy.enemyHP -= player.Damage;

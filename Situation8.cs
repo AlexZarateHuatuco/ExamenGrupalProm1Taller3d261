@@ -26,6 +26,20 @@ namespace ExamenGrupalT3d26._1
             string option =
              Console.ReadLine();
 
+            if (player.LifePotion == true)
+            {
+                Console.WriteLine("quieres usar la pocion de vida?");
+                Console.WriteLine("1.si");
+                Console.WriteLine("2.no");
+                string optionP = Console.ReadLine();
+                if (optionP == "1")
+                {
+                    player.Life += 5;
+                    Console.Write($"usas pocion de vida (vida actual {player.Life}).");
+                    player.LifePotion = false;
+                }
+            }
+
             if (option == "1")
             {
                 //player.IncreaseDamage(4);

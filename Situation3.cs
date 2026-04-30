@@ -34,6 +34,8 @@ namespace ExamenGrupalT3d26._1
                 Enemies enemy = EnemiesData.Enemies[0];
                 combat(player, enemy);
                 Console.WriteLine("Recibiste mordidas y arañasos tratando de luchar.");
+                Console.Write("al morir el enemigo aparecio una pocion de vida, te la guardas para mas tarde");
+                player.LifePotion = true;
 
             }
 

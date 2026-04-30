@@ -13,6 +13,9 @@ namespace ExamenGrupalT3d26._1
         int life;//lo hice public para poder acceder desde las situaciones
         int damage;//lo hice public para poder acceder desde las situaciones
         string name;
+
+        public bool LifePotion=false;
+        public bool damagePotion=false;
         public string Name
         {
             get { return name; }
