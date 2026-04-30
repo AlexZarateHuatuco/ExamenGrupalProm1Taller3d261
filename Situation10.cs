@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -50,14 +51,25 @@ namespace ExamenGrupalT3d26._1
                     Console.WriteLine("La Reliquia Oscura ayuda a romper la corrupción.");
 
                     Console.WriteLine("La corona se resquebraja.");
+
+                    Console.WriteLine("FINAL BUENO: al resquebrajar la corona logras elimnar por completo el mal que habitaba en la mazmorra");
                 }
                 else
                 {
 
-                    player.Life -= 10;
+                    player.Life -= 20;
                     Console.WriteLine("La corona libera una explosión oscura.");
 
                     Console.WriteLine($"Logras destruirla, pero pagas un precio.(tu vida actual es {player.Life})");
+                    if (player.Life <5)
+                    {
+                        Console.WriteLine("FINAL NEUTRAL: luego de destruir la corona caminas hacia el final de la mazmorra pero por tantas heridas que tienes caes ");
+                    }
+                    else
+                    {
+                        Console.WriteLine("FINAL NEUTRAL: luego de destruir la corona caminas hacia el final de la mazmorra");
+                    }
+
                 }
             }
 
@@ -67,6 +79,17 @@ namespace ExamenGrupalT3d26._1
 
                 player.Life -= 15;
                 Console.WriteLine($"El poder intenta consumirte.(tu vida actual es {player.Life})");
+                if (player.Life > 0)
+                {
+                    Console.WriteLine("FINAL Malo: el poder logro consumirte y ahora te vuelves el nuevo jefe de la mazmorra");
+                }
+                else
+                {
+                    Console.WriteLine("FINAL Malo: no soportas el poder y mueres");
+                }
+
+
+
             }
         }
     }
