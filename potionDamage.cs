@@ -8,17 +8,9 @@ namespace ExamenGrupalT3d26._1
 {
     internal class potionDamage
     {
-        int DamageToEnemy;
-
-        public potionDamage(int damageToEnemy)
+        public void DañarEnemigo(Enemies enemigo)
         {
-            this.DamageToEnemy = damageToEnemy;
-            DañarEnemigo();
-        }
-
-        void DañarEnemigo()
-        {
-            DamageToEnemy = -2;
+            enemigo.enemyHP -= 5;
         }
     }
 }

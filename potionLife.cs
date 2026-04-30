@@ -8,17 +8,9 @@ namespace ExamenGrupalT3d26._1
 {
     internal class potionLife
     {
-        int RecoveredLife;
-
-        public potionLife(int recoveredLife)
+        public potionLife(string name, int life, int damage) : base(name, life, damage)
         {
-            this.RecoveredLife = recoveredLife;
-            recoverLife();
-        }
-
-        void recoverLife()
-        {
-            RecoveredLife++;
+            life += 3;
         }
     }
 }
