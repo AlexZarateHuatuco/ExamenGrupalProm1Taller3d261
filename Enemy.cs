@@ -21,6 +21,7 @@ namespace ExamenGrupalT3d26._1
             this.enemyHP = 20;
             this.enemyDamage = 2;
             this.stamina = 9999; //completamente inecesario. no corre codigo para perder estamina ^-^
+            this.cost = 1;
         }
 
         public void EnemyArcher()
