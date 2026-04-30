@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExamenGrupalT3d26._1
 {
-    internal class potionLife
+    internal class potionLife : Character
     {
         public potionLife(string name, int life, int damage) : base(name, life, damage)
         {

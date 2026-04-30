@@ -28,8 +28,11 @@ namespace ExamenGrupalT3d26._1
 
             if (option == "1")
             {
-                player.TakeDamage(8);
-
+                //player.TakeDamage(8);
+                //player.life -= 8;
+                Console.WriteLine("¡Un Arquero Equeletico se mete en tu camino!!");
+                Enemies enemy = EnemiesData.Enemies[1];
+                combat(player, enemy);
                 Console.WriteLine("Mientras enfrentas al caballero esquelético recibes daño... pero logras derrotarlo.");
 
             }
@@ -45,14 +48,26 @@ namespace ExamenGrupalT3d26._1
 
                 else
                 {
-                    Console.WriteLine("No tienes la llave.");
+                    player.Life -= 8;
+                    Console.WriteLine($"No tienes la llave, el guardia te hace un corte y te deja pasar (tu vida actual es {player.Life}");
 
-                    Console.WriteLine("El guardia ataca.");
-
-                    player.TakeDamage(10);
+                    //player.TakeDamage(10);
+                    //player.life -= 10;
+                }
+            }
+        }
+        public void combat(Character player, Enemies enemy)
+        {
+            while (player.Life > 0 && enemy.enemyHP > 0)
+            {
+                enemy.enemyHP -= player.Damage;
+                Console.WriteLine($"Atacas al enemigo (vida actual del enemigo: {enemy.enemyHP})");
+                if (enemy.enemyHP > 0)
+                {
+                    player.Life -= enemy.enemyDamage;
+                    Console.WriteLine($"El enemigo te ataca (vida actual del jugador: {player.Life})");
                 }
             }
         }
     }
 }
-

@@ -28,10 +28,13 @@ namespace ExamenGrupalT3d26._1
 
             if (option == "1")
             {
-                player.TakeDamage(5);
-
+                //player.TakeDamage(5);
+                //player.life -= 5;
+                Console.WriteLine("¡Un pug boxeador gigante se mete en tu camino!");
+                Enemies enemy = EnemiesData.Enemies[0];
+                combat(player, enemy);
                 Console.WriteLine("Recibiste mordidas y arañasos tratando de luchar.");
-          
+
             }
 
             else
@@ -39,6 +42,19 @@ namespace ExamenGrupalT3d26._1
                 Console.WriteLine("Evitas el combate... por ahora.");
             }
         }
+        public void combat(Character player, Enemies enemy)
+        {
+            while (player.Life > 0 && enemy.enemyHP > 0)
+            {
+                enemy.enemyHP -= player.Damage;
+                Console.WriteLine($"Atacas al enemigo (vida actual del enemigo: {enemy.enemyHP})");
+                if (enemy.enemyHP > 0)
+                {
+                    player.Life -= enemy.enemyDamage;
+                    Console.WriteLine($"El enemigo te ataca (vida actual del jugador: {player.Life})");
+                }
 
+            }
+        }
     }
 }

@@ -30,9 +30,10 @@ namespace ExamenGrupalT3d26._1
 
             if (option == "1")
             {
-                player.TakeDamage(5);
+                player.Life -= 5;
 
-                Console.WriteLine("Una aguja envenenada atraviesa tu brazo.");
+
+                Console.WriteLine($"Una aguja envenenada atraviesa tu brazo.(vida actual {player.Life})");
             }
 
             else
@@ -43,6 +44,8 @@ namespace ExamenGrupalT3d26._1
 
                 player.items.Add(1);
             }
+
+
         }
     }
 }

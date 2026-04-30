@@ -28,24 +28,33 @@ namespace ExamenGrupalT3d26._1
 
             if (option == "1")
             {
-                player.TakeDamage(5);
+                //player.TakeDamage(5);
 
-                player.Heal(10);
+                //player.Heal(10);
+
+                //player.life += 10;
+
+                player.Life += 10;
 
                 Console.WriteLine("Logras purificarlo con éxito y siente como recobras fuerza.");
 
 
-                Console.WriteLine("Recuperas 10 puntos de salud.");
+                Console.WriteLine($"Recuperas 10 puntos de salud.(tu vida actual es {player.Life})");
 
             }
 
             else
             {
-                player.TakeDamage(5);
+                //player.TakeDamage(5);
 
-                player.IncreaseDamage(2);
+                //player.life -= 5;
 
-                Console.WriteLine("Ganas poder, pero la maldición responde.");
+                //player.IncreaseDamage(2);
+                //player.damage += 2;
+                player.Life -= 5;
+                player.Damage += 2;
+
+                Console.WriteLine($"Ganas poder, pero la maldición responde.(tu vida actual es {player.Life} y tu daño actual es {player.Damage})");
             }
 
         }

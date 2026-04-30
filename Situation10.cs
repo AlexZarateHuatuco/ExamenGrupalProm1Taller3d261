@@ -38,20 +38,20 @@ namespace ExamenGrupalT3d26._1
                 }
                 else
                 {
-                    player.TakeDamage(10);
 
+                    player.Life -= 10;
                     Console.WriteLine("La corona libera una explosión oscura.");
 
-                    Console.WriteLine("Logras destruirla, pero pagas un precio.");
+                    Console.WriteLine($"Logras destruirla, pero pagas un precio.(tu vida actual es {player.Life})");
                 }
             }
 
 
             else
             {
-                player.TakeDamage(15);
 
-                Console.WriteLine("El poder intenta consumirte.");
+                player.Life -= 15;
+                Console.WriteLine($"El poder intenta consumirte.(tu vida actual es {player.Life})");
             }
         }
     }

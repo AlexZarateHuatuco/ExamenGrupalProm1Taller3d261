@@ -28,9 +28,10 @@ namespace ExamenGrupalT3d26._1
 
             if (option == "1")
             {
-                player.TakeDamage(5);
-
-                Console.WriteLine("Mientras corres te tropiezas y recibes daño por caida... pero logras pasar la trampa.");
+                //player.TakeDamage(5);
+                //player.life -= 5;
+                player.Life -= 5;
+                Console.WriteLine($"Mientras corres te tropiezas y recibes daño por caida... pero logras pasar la trampa.(vida actual{player.Life})");
 
             }
 

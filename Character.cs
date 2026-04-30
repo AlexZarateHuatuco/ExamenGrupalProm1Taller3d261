@@ -10,8 +10,8 @@ namespace ExamenGrupalT3d26._1
     {
         bool continueFlag = true;
 
-        int life;
-        int damage;
+        int life;//lo hice public para poder acceder desde las situaciones
+        int damage;//lo hice public para poder acceder desde las situaciones
         string name;
         public string Name
         {

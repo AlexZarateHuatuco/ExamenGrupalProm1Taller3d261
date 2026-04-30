@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace ExamenGrupalT3d26._1
 {
-    internal class potionDamage
+    internal class EnemiesData
     {
-        public void DamageEnemy(Enemies enemigo)
-        {
-            enemigo.enemyHP -= 5;
-        }
+        public static List<Enemies> Enemies = new List<Enemies>();
     }
 }

@@ -28,11 +28,12 @@ namespace ExamenGrupalT3d26._1
 
             if (option == "1")
             {
-                player.IncreaseDamage(4);
-
-                player.TakeDamage(5);
-
-                Console.WriteLine("Obtienes poder prohibido.");
+                //player.IncreaseDamage(4);
+                player.Damage += 4;
+                //player.TakeDamage(5);
+                //player.life -= 5;
+                player.Life -= 5;
+                Console.WriteLine($"Obtienes poder prohibido.(tu vida actual es {player.Life} y tu daño actual es {player.Damage})");
             }
 
             else

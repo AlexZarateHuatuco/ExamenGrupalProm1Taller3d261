@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Character.cs" />
+    <Compile Include="EnemiesDate.cs" />
+    <Compile Include="Enemy.cs" />
     <Compile Include="potionDamage.cs" />
     <Compile Include="potionLife.cs" />
     <Compile Include="Program.cs" />

@@ -8,7 +8,6 @@ namespace ExamenGrupalT3d26._1
 {
     internal class Situation2 : Situation
     {
-
         public Situation2() : base("Prisoner Cell", "Un hombre encadenado tiembla en una celda.")
         {
 
@@ -29,13 +28,14 @@ namespace ExamenGrupalT3d26._1
 
             if (option == "1")
             {
-                player.IncreaseDamage(2);
+                //player.IncreaseDamage(2);
+                player.Damage += 2;
 
                 player.items.Add(2);
 
                 Console.WriteLine("Te entrega una Daga de plata.");
 
-                Console.WriteLine("Tu daño aumenta.");
+                Console.WriteLine($"Tu daño aumenta.(tu daño actual {player.Damage})");
 
             }
 
