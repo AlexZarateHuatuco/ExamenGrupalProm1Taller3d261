@@ -1,12 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="ExamenGrupalT3d26._1.Program">
-    <Position X="11.5" Y="5.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
-      <FileName>Program.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="ExamenGrupalT3d26._1.Situation">
     <Position X="9.5" Y="5" Width="1.5" />
     <TypeIdentifier>
@@ -84,26 +77,40 @@
       <FileName>Situation9.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ExamenGrupalT3d26._1.Character">
-    <Position X="13.5" Y="1.25" Width="1.5" />
+  <Class Name="ExamenGrupalT3d26._1.EnemiesData" Collapsed="true">
+    <Position X="10" Y="10.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAEAAQCAAAAAgAAAAAgAAAQAAIAEQAAAAAAAAAABBAA=</HashCode>
-      <FileName>Character.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EnemiesDate.cs</FileName>
     </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="Enemies" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="ExamenGrupalT3d26._1.Enemies">
-    <Position X="13.5" Y="7.25" Width="1.5" />
+    <Position X="13.25" Y="9" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAIgBBAEAAAAAAIAAAACQAAQAAAAEAAAAAAACAA=</HashCode>
       <FileName>Enemy.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ExamenGrupalT3d26._1.EnemiesData">
-    <Position X="13.5" Y="5.5" Width="1.5" />
+  <Class Name="ExamenGrupalT3d26._1.Program">
+    <Position X="16" Y="7.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>EnemiesDate.cs</FileName>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="ExamenGrupalT3d26._1.Character">
+    <Position X="13.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAQCAAAAAgAAAAAgAAAQAAIAEQAAAAAAAAAABBAA=</HashCode>
+      <FileName>Character.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="13.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier />
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
