@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ExamenGrupalT3d26._1
 {
@@ -14,8 +11,8 @@ namespace ExamenGrupalT3d26._1
         int damage;//lo hice public para poder acceder desde las situaciones
         string name;
 
-        public bool LifePotion=false;
-        public bool damagePotion=false;
+        public bool LifePotion = false;
+        public bool damagePotion = false;
         public string Name
         {
             get { return name; }

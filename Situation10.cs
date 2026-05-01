@@ -1,9 +1,4 @@
 ﻿using System;
-using System.CodeDom;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ExamenGrupalT3d26._1
 {
@@ -62,7 +57,7 @@ namespace ExamenGrupalT3d26._1
                     Console.WriteLine("La corona libera una explosión oscura.");
 
                     Console.WriteLine($"Logras destruirla, pero pagas un precio.(tu vida actual es {player.Life})");
-                    if (player.Life <5)
+                    if (player.Life < 5)
                     {
                         Console.WriteLine("FINAL NEUTRAL: luego de destruir la corona caminas hacia el final de la mazmorra pero por tantas heridas que tienes caes ");
                         Environment.Exit(0);

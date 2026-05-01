@@ -8,77 +8,77 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ExamenGrupalT3d26._1.Situation1">
-    <Position X="4.75" Y="1" Width="1.5" />
+    <Position X="9.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>Situation1.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ExamenGrupalT3d26._1.Situation10">
-    <Position X="7.5" Y="9.75" Width="1.5" />
+    <Position X="9.5" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>Situation10.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ExamenGrupalT3d26._1.Situation2">
-    <Position X="4.75" Y="3" Width="1.5" />
+    <Position X="7.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>Situation2.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ExamenGrupalT3d26._1.Situation3">
-    <Position X="4.75" Y="5.25" Width="1.5" />
+    <Position X="6" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAACAAAAA=</HashCode>
       <FileName>Situation3.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ExamenGrupalT3d26._1.Situation4">
-    <Position X="4.75" Y="7.75" Width="1.5" />
+    <Position X="4.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>Situation4.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ExamenGrupalT3d26._1.Situation5">
-    <Position X="4.75" Y="9.75" Width="1.5" />
+    <Position X="2.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAACAAAAA=</HashCode>
       <FileName>Situation5.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ExamenGrupalT3d26._1.Situation6">
-    <Position X="7.5" Y="1" Width="1.5" />
+    <Position X="2.25" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>Situation6.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ExamenGrupalT3d26._1.Situation7">
-    <Position X="7.5" Y="3" Width="1.5" />
+    <Position X="4.25" Y="7.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>Situation7.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ExamenGrupalT3d26._1.Situation8">
-    <Position X="7.5" Y="5.25" Width="1.5" />
+    <Position X="6" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>Situation8.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ExamenGrupal.Situation9">
-    <Position X="7.5" Y="7.75" Width="1.5" />
+    <Position X="7.75" Y="7.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAACAAAAA=</HashCode>
       <FileName>Situation9.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ExamenGrupalT3d26._1.EnemiesData" Collapsed="true">
-    <Position X="10" Y="10.5" Width="1.5" />
+    <Position X="14.5" Y="8.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>EnemiesDate.cs</FileName>
@@ -88,29 +88,30 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="ExamenGrupalT3d26._1.Enemies">
-    <Position X="13.25" Y="9" Width="1.5" />
+    <Position X="12.25" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAIgBBAEAAAAAAIAAAACQAAQAAAAEAAAAAAACAA=</HashCode>
       <FileName>Enemy.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ExamenGrupalT3d26._1.Program">
-    <Position X="16" Y="7.5" Width="1.5" />
+    <Position X="12.25" Y="5.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <HashCode>AAAYAAAAAAACAAAAAAAAAAAAAAAAAAABAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="character" />
+      <Field Name="enemies" />
+      <Field Name="situation" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="ExamenGrupalT3d26._1.Character">
-    <Position X="13.25" Y="1" Width="1.5" />
+    <Position X="12.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAEAAQCAAAAAgAAAAAgAAAQAAIAEQAAAAAAAAAABBAA=</HashCode>
       <FileName>Character.cs</FileName>
     </TypeIdentifier>
-  </Class>
-  <Class Name="System.Object" Collapsed="true">
-    <Position X="13.25" Y="7.75" Width="1.5" />
-    <TypeIdentifier />
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ExamenGrupalT3d26._1
 {
@@ -32,7 +28,7 @@ namespace ExamenGrupalT3d26._1
                 Console.WriteLine("1.si");
                 Console.WriteLine("2.no");
 
-                string optionP= Console.ReadLine();
+                string optionP = Console.ReadLine();
                 if (optionP == "1")
                 {
                     player.Life += 5;

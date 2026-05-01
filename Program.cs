@@ -1,18 +1,15 @@
 ﻿using ExamenGrupal;
-using ExamenGrupalT3d26._1;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ExamenGrupalT3d26._1
 {
     internal class Program
     {
         //List<Enemies> e = new List<Enemies>();//llenan la lista
-
+        private Character character;
+        private Enemies enemies;
+        private Situation situation;
         static void Main(string[] args)
         {
 
